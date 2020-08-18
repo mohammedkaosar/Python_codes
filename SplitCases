@@ -1,0 +1,13 @@
+CAP="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+low="abcdefghijklmnopqrstuvwxyz"
+def split_case(S):
+    S1=""
+    s2=""
+    for i in S:
+        if i in CAP:
+            S1=S1+i
+        elif i in low:
+            s2=s2+i
+    return[S1,s2]
+s=input("String: ")
+print(split_case(s))
